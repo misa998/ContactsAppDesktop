@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContactsApp.iml" filepath="$PROJECT_DIR$/ContactsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.common/app.common.iml" filepath="$PROJECT_DIR$/app.common/app.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.db/app.db.iml" filepath="$PROJECT_DIR$/app.db/app.db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.ui/app.ui.iml" filepath="$PROJECT_DIR$/app.ui/app.ui.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.ControllerScene">
+    <center>
+    <GridPane fx:id="gridPane" alignment="CENTER" vgap="10.0" BorderPane.alignment="CENTER">
+            <Label fx:id="labelFN" text="First name" textFill="#a8a6a6" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin></Label>
+            <TextField fx:id="firstname" GridPane.columnIndex="2" GridPane.rowIndex="1">
+
+            <GridPane.margin>
+               <Insets left="100.0" right="100.0" />
+            </GridPane.margin></TextField>
+            <Label text="Last name" textAlignment="CENTER" textFill="#a8a6a6" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+            <TextField fx:id="lastname" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets left="100.0" right="100.0" />
+            </GridPane.margin></TextField>
+            <Label text="Phone Number" textAlignment="CENTER" textFill="#a8a6a6" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+            <TextField fx:id="phone" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <GridPane.margin>
+               <Insets left="100.0" right="100.0" />
+            </GridPane.margin>
+            </TextField>
+            <Label text="Notes" textAlignment="CENTER" textFill="#a8a6a6" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin></Label>
+            <TextArea fx:id="notes" prefHeight="57.0" prefWidth="451.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <GridPane.margin>
+               <Insets left="100.0" right="100.0" />
+            </GridPane.margin></TextArea>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints maxWidth="651.0" minWidth="411.0" prefWidth="651.0" />
+            <ColumnConstraints maxWidth="240.0" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </center>
+   <top>
+       <HBox alignment="CENTER_LEFT">
+           <Button fx:id="backBtn" cancelButton="true" onMouseClicked="#handlingSceneChange" text="Go Back" textFill="#cdcdcd">
+               <graphic>
+                   <ImageView>
+                       <Image url="@icons8-back-30.png" />
+                   </ImageView>
+               </graphic>
+           </Button>
+         <ProgressBar fx:id="progressBar" opacity="0.57" prefHeight="18.0" prefWidth="56.0" progress="0.0" visible="false">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin></ProgressBar>
+         <Label fx:id="update" text="Updating contact" textFill="#cdcdcd" visible="false">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+         </Label>
+       </HBox>
+   </top>
+   <bottom>
+       <HBox alignment="CENTER">
+           <Button fx:id="addBtn" defaultButton="true" onMouseClicked="#handleAdd" text="Proceed" textFill="#cdcdcd">
+               <graphic>
+                   <ImageView>
+                       <Image url="@icons8-team-30.png" />
+                   </ImageView>
+                </graphic>
+           </Button>
+       </HBox>
+   </bottom>
+</BorderPane>

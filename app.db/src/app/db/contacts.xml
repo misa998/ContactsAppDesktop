@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+<contact>
+	<first_name>Milos</first_name>
+	<last_name>Ilic</last_name>
+	<phone_number>3816556468453</phone_number>
+	<notes>asd</notes>
+</contact>
+<contact>
+	<first_name>asfasf</first_name>
+	<last_name> </last_name>
+	<phone_number>asfasfasf</phone_number>
+	<notes> </notes>
+</contact>
+<contact>
+	<first_name>Dodati</first_name>
+	<last_name> </last_name>
+	<phone_number>325</phone_number>
+	<notes>U tableView ucitati samo ime i broj, a u dialog sve ostale podatke zavisno od contact id</notes>
+</contact>
+<contact>
+	<first_name>Resiti</first_name>
+	<last_name> </last_name>
+	<phone_number>325</phone_number>
+	<notes>prazna polja u xml</notes>
+</contact>
+</contacts>

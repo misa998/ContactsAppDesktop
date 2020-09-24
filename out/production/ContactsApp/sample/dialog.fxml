@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane fx:id="dialogPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerDialog">
+    <content>
+        <GridPane hgap="10" vgap="10">
+
+            <Label text="First name" textFill="#a8a6a6" GridPane.rowIndex="1" />
+            <TextField fx:id="firstname" promptText="Enter contact's first name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Last name" textFill="#a8a6a6" GridPane.rowIndex="2" />
+            <TextField fx:id="lastname" promptText="Enter last name of the contact" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Phone Number" textFill="#a8a6a6" GridPane.rowIndex="3" />
+            <TextField fx:id="phone" promptText="Enter contact's phone number" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Notes" textFill="#a8a6a6" GridPane.rowIndex="4" />
+            <TextArea fx:id="notes" prefHeight="57.0" prefWidth="451.0" promptText="Enter notes here" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <image>
+               <Image url="@../../../ContactsApp - database/src/icons8-contact-16.png" />
+            </image>
+         </ImageView>
+        </GridPane>
+    </content>
+</DialogPane>

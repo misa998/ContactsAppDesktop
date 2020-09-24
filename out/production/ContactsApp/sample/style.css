@@ -1,0 +1,156 @@
+#mainBorderPane{
+    -fx-background-color: #262626;
+}
+
+#menuBar {
+    -fx-background-color: #262626;
+    -fx-padding: 0;
+}
+
+#menuBar .label{
+    -fx-text-fill: #cccccc;
+}
+#menuBar .border{
+    -fx-text-fill: #262626;
+    -fx-background-color: #262626;
+    -fx-background-insets: 0, 0 0 1 0;
+        -fx-padding: 0; /* 0 */
+        -fx-opacity: 0.5;
+        -fx-background-color: darkslategray;
+        -fx-border-width: 0.5;
+}
+#menuBar #newItem, #editItem, #deleteItem, #exitItem{
+    -fx-background-color: #262626;
+    -fx-text-fill: white;
+}
+
+
+
+#menuBar #newItem:hover, #menuBar #newItem:focused, #menuBar #newItem:showing, #menuBar #editItem:hover, #menuBar #editItem:focused, #menuBar #editItem:showing, #menuBar #exitItem:hover, #menuBar #exitItem:focused, #menuBar #exitItem:showing #menuBar #deleteItem:hover, #menuBar #deleteItem:focused, #menuBar #deleteItem:showing{
+    -fx-background: -fx-accent;
+    -fx-background-color: darkslategray;
+    -fx-opacity: 0.5;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+#contextMenu {
+    -fx-padding: 0;
+}
+
+/*
+#contextMenu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:darkslategray ;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+    -fx-opacity: 0.9;
+}
+*/
+
+#contactsTableView{
+   -fx-background-color: #262626;
+}
+
+#contactsTableView .column-header-background{
+    -fx-background-color: linear-gradient(#262626 0%, #424242 100%);
+}
+
+#contactsTableView .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #a8a6a6;
+}
+
+#contactsTableView .column-header {
+    -fx-background-color: transparent;
+}
+
+#contactsTableView .table-cell{
+    -fx-text-fill: #d9d9d9;
+    -fx-border-width: 0.5;
+    -fx-border-color: transparent;
+}
+
+#contactsTableView .table-row-cell{
+    -fx-background-color:  #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+#contactsTableView .table-row-cell:odd{
+    -fx-background-color: #303030;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+#contactsTableView .table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+#contactsTableView .filler{
+    -fx-background-color: transparent;
+}
+#contactsTableView .scroll-bar:vertical .track{
+        -fx-padding:2px;
+	-fx-background-color: #262626;
+	-fx-border-color: #262626;
+	-fx-background-radius: 0em;
+	-fx-border-radius:2em;
+
+}
+#contactsTableView .scroll-bar:vertical .increment-button ,
+#contactsTableView .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color: #262626;
+	-fx-background-radius: 0em;
+	-fx-padding:0 0 0 0;
+}
+#contactsTableView   .scroll-bar:vertical .increment-arrow,
+#contactsTableView   .scroll-bar:vertical  .decrement-arrow
+{
+	-fx-shape: " ";
+	-fx-padding:0;
+}
+#contactsTableView .scroll-bar:vertical .thumb {
+    -fx-background-color:transparent;
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 2em;
+    -fx-padding:0px;
+}
+
+#dialogPane{
+    -fx-background-color: #262626;
+}
+#dialogPane .label {
+    -fx-text-fill: white;
+}
+
+#dialogPane:header .header-panel {
+    -fx-background-color: black;
+}
+
+#dialogPane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+#firstname, #lastname, #phone{
+    -fx-background-color: #3D3D3D;
+    -fx-text-fill: #a8a6a6;
+}
+#notes{
+    -fx-background-color: #3D3D3D;
+    -fx-text-fill: #a8a6a6;
+}
+
+#notes .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+#notes .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+#notes .scroll-pane .content{
+    -fx-background-color: transparent;
+}
